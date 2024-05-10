@@ -41,7 +41,16 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="16dp"
                 android:src="@drawable/baseline_auto_fix_normal_24"
-                android:visibility="visible" />
+                />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/baseline_auto_delete_24"
+                />
 
         </RelativeLayout>
 
