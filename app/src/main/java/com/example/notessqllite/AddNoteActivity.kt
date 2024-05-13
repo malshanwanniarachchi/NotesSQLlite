@@ -23,6 +23,17 @@ class AddNoteActivity : AppCompatActivity() {
         binding.saveButton.setOnClickListener{
             val title = binding.titleEditText.text.toString()
             val content = binding.contentEditText.text.toString()
+
+            if(title.isEmpty()){
+                binding.titleEditText.error = "Title content be empty"
+                return@setOnClickListener
+            }
+            if (content.isEmpty()){
+                binding.contentEditText.error  = "Content can not be empty"
+                return@setOnClickListener
+            }
+
+
             val note = Note(0,title,content)
             db.insertNote(note)
             finish()
