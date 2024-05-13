@@ -51,6 +51,7 @@ class NotesAdapter(private var notes: List<Note>,context: Context) : RecyclerVie
             holder.itemView.context.startActivity(intent)
         }
 
+        //delete
         // Set click listener for delete button
         holder.deleteButton.setOnClickListener {
             // Delete note from database, refresh data in adapter, and show toast
