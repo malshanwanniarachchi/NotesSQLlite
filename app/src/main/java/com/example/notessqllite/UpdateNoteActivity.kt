@@ -48,6 +48,8 @@ class UpdateNoteActivity : AppCompatActivity() {
             // Create updated note object
             val updatedNote = Note(noteId,newTitle,newContent)
 
+
+
             // Update the note in the database
             db.updateNote(updatedNote)
 
@@ -56,5 +58,6 @@ class UpdateNoteActivity : AppCompatActivity() {
             Toast.makeText(this,"changes saved",Toast.LENGTH_SHORT).show()
 
         }
+
     }
 }
